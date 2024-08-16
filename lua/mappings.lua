@@ -21,7 +21,7 @@ map({"i", "n", "t"}, "<leader>j", function ()
   } end, { desc = "terminal toggle floating term" })
 
 --  Resize window
-map ({"i", "n"}, "]]", "<C-w>5>", {desc = "Resize window to left"})
-map ({"i", "n"}, "[[", "<C-w>5<", {desc = "Resize window to right"})
+map ({"i", "n"}, "]]", "<C-w>5>", {desc = "Resize window to right"})
+map ({"i", "n"}, "[[", "<C-w>5<", {desc = "Resize window to left"})
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
