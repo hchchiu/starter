@@ -27,7 +27,7 @@ return {
     },
   },
 
-  -- DAP
+  -- Nvim DAP
   {
     "mfussenegger/nvim-dap",
     config = function()

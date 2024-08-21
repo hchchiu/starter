@@ -13,3 +13,4 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = "*",
     command = "set formatoptions-=c formatoptions-=r formatoptions-=o"
 })
+
