@@ -7,6 +7,7 @@ o.cursorlineopt ='both' -- to enable cursorline!
 o.relativenumber = true
 o.scrolloff = 30
 o.wrap = false
+o.shiftwidth = 4
 
 -- Prevent auto insterting the comment while typing "o"
 vim.api.nvim_create_autocmd("FileType", {

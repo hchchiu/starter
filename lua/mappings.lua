@@ -8,7 +8,7 @@ map("i", "jk", "<ESC>")
 map("n", ":W", ":w <cr>", { remap = true })
 
 -- NVChad Terminal
-map({ "i", "n", "t" }, "<leader>j", function()
+map({ "i", "n", "t" }, "<C-j>", function()
   require("nvchad.term").toggle {
     pos = "float",
     id = "floatTerm",

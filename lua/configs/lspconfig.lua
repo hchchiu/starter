@@ -26,7 +26,7 @@ lspconfig.clangd.setup {
     "clangd",
     "--background-index",
     "--completion-style=bundled",
-    "--log=verbose",
+    -- "--log=verbose",
     -- "--compile-commands-dir=/home/hchchiu/dvlab/gv0/",
   },
 }
