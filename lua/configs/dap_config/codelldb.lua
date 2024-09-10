@@ -9,7 +9,6 @@ M.adapter = {
     executable = {
         -- CHANGE THIS to your path!
         command = "/home/chiu/.local/share/nvim/mason/bin/codelldb",
-        -- command = "/home/chiu/.local/share/nvim/mason/packages/codelldb/codelldb",
         args = { "--port", "${port}" },
 
         -- On windows you may have to uncomment this:
@@ -22,11 +21,17 @@ M.config = {
         name = "Launch file",
         type = "codelldb",
         request = "launch",
-        program = function()
-            return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
-        end,
+        -- program = function()
+        --     return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+        -- end,
+        program = program_abs_path,
         cwd = '${workspaceFolder}',
         stopOnEntry = false,
+        args = function()
+            -- local argument_string = vim.fn.input "Program arguments: "
+            local argument_string = debug_args
+            return vim.fn.split(argument_string, " ", true)
+        end,
     },
 }
 
