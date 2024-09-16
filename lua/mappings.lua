@@ -26,8 +26,8 @@ map({ "i", "n", "t" }, "<C-,>", function()
 end, { desc = "terminal toggle floating term" })
 
 --  Resize window
-map({ "i", "n" }, "]]", "<C-w>5>", { desc = "Resize window to right" })
-map({ "i", "n" }, "[[", "<C-w>5<", { desc = "Resize window to left" })
+map({ "i", "n" }, "]]", "<C-w>10>", { desc = "Resize window to right" })
+map({ "i", "n" }, "[[", "<C-w>10<", { desc = "Resize window to left" })
 
 -- Nvim DAP
 map("n", "<F7>", "<cmd>lua require'dap'.step_into()<CR>", { desc = "Debugger step into" })
