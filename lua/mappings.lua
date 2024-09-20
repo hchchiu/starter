@@ -16,10 +16,10 @@ map({ "i", "n", "t" }, "<C-,>", function()
         id = "floatTerm",
         float_opts = {
             relative = "editor",
-            row = 0.05,
-            col = 0.1,
-            width = 0.8,
-            height = 0.8,
+            row = 0.01,
+            col = 0.04,
+            width = 0.9,
+            height = 0.9,
             border = "single",
         },
     }

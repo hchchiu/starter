@@ -60,11 +60,21 @@ return {
     },
 
     --- enables autocomplete for opts
-    --- @module "auto-session"
-    --- @type AutoSession.Config
     opts = {
       suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
       -- log_level = 'debug',
+    },
+  },
+
+  -- TODO Comment
+  {
+    "folke/todo-comments.nvim",
+    lazy = false,
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
     },
   },
 
